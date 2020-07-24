@@ -1,0 +1,13 @@
+@import "variables";
+
+@each $font in $font-faces {
+  @font-face {
+    font-family: map-get($font, 'name');
+    src: local(map-get($font, 'local')),
+         local(map-get($font, 'system')),
+         url("#{$path_to_fonts_directory}#{map-get($font, 'filename')}.woff2") format("woff2"),
+         url("#{$path_to_fonts_directory}#{map-get($font, 'filename')}.woff") format("woff");
+    font-weight: map-get($font, 'weight');
+    font-style: map-get($font, 'style');
+  }
+}
