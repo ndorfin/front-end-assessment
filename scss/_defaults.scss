@@ -1,0 +1,11 @@
+@import "variables";
+
+body {
+  font-size: $font_default_size;
+  line-height: 1.25;
+  font-family: $font_stack;
+}
+
+img {
+  max-width: 100%;
+}
