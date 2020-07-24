@@ -1,4 +1,18 @@
+// Variables and configuration
 @import "variables";
+
+// Font-faces
 @import "fonts";
+
+// Sensible defaults
 @import "defaults";
+
+// Utility classes
+@import "utilities";
+
+// General styling
 @import "headings";
+
+// Components
+@import "layouts";
+@import "masthead";
