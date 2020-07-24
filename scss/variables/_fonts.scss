@@ -1,0 +1,23 @@
+// Fonts
+$font_default: 'Lato';
+$font_fallbacks: Arial, Helvetica, sans-serif;
+$font_stack: #{$font_default}, $font_fallbacks;
+$font_default_size: 16px;
+$font-faces: (
+  (
+    name: 'Lato',
+    weight: 700,
+    style: normal,
+    local: 'Lato Bold',
+    system: 'Lato-Bold',
+    filename: 'lato-bold'
+  ),
+  (
+    name: 'Lato',
+    weight: 400,
+    style: normal,
+    local: 'Lato Regular',
+    system: 'Lato-Regular',
+    filename: 'lato-regular'
+  )
+);
