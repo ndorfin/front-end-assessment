@@ -52,7 +52,7 @@ nav ul {
       padding-inline: 0; } }
 
 body > header {
-  background-color: #F4F6F9;
+  background-color: #f4f6f9;
   padding-block-start: 30px; }
   body > header h1 {
     margin: 0; }
@@ -74,7 +74,7 @@ body > header {
       height: 32px; } }
 
 .masthead {
-  background-color: #F4F6F9; }
+  background-color: #f4f6f9; }
   .masthead > div {
     display: flex;
     flex-direction: column;
