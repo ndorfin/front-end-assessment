@@ -1,10 +1,13 @@
 @import "variables";
 
 .masthead {
+  background-color: #F4F6F9;
+
   > div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-block-end: 60px;
 
     @media (min-width: $breakpoint_desktop) {
       align-items: flex-start;
@@ -15,7 +18,7 @@
     color: $colour_headings;
     font-size: 30px;
     line-height: 1.32;
-    margin-top: 0;
+    margin-top: 50px;
     margin-bottom: 33px;
 
     @media (min-width: $breakpoint_desktop) {

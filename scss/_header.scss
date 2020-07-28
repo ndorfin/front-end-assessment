@@ -1,7 +1,8 @@
 body > header {
-  text-align: center;
+  background-color: #F4F6F9;
+  padding-block-start: 30px;
 
-  @media (min-width: $breakpoint_desktop) {
-    text-align: left;
+  h1 {
+    margin: 0;
   }
 }

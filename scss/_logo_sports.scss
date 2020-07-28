@@ -1,7 +1,19 @@
 @import "variables";
 
 .logo_sports {
-  background-image: url('../img/logo_sports.svg');
+  display: block;
+  margin-inline: auto;
+  text-indent: -999px;
+  background-image: url('../img/logo_sports_colour.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  width: 186px;
+  height: 70px;
+  overflow: hidden;
+
+  @media (min-width: $breakpoint_desktop) {
+    margin-inline: 0;
+    width: 92px;
+    height: 32px;
+  }
 }
