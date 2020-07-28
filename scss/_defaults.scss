@@ -6,6 +6,12 @@ body {
   font-family: $font_stack;
 }
 
-img {
+img,
+svg,
+figure {
   max-width: 100%;
+}
+
+nav ul {
+  @include list_stripped;
 }

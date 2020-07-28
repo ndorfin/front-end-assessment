@@ -1,6 +1,5 @@
 @import "variables";
 
 .container {
-  max-width: $width_faux_column;
-  margin: 0 auto;
+  @include max-width-container($width_faux_column);
 }
