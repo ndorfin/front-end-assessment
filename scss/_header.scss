@@ -1,0 +1,7 @@
+body > header {
+  text-align: center;
+
+  @media (min-width: $breakpoint_desktop) {
+    text-align: left;
+  }
+}

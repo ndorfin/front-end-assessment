@@ -1,1 +1,49 @@
 @import "variables";
+
+.masthead {
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $breakpoint_desktop) {
+      align-items: flex-start;
+    }
+  }
+
+  .heading {
+    color: $colour_headings;
+    font-size: 30px;
+    line-height: 1.32;
+    margin-top: 0;
+    margin-bottom: 33px;
+
+    @media (min-width: $breakpoint_desktop) {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.masthead_description {
+  color: $colour_introduction;
+  font-size: 16px;
+  line-height: 1.44;
+  margin-top: 0;
+  margin-bottom: 50px;
+  @media (min-width: $breakpoint_desktop) {
+    font-size: 18px;
+  }
+}
+
+.masthead_buttons {
+  @include list_stripped;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  li + li {
+    margin-left: 36px;
+  }
+}
