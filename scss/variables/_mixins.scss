@@ -1,3 +1,15 @@
+@mixin list_stripped() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin max-width-container($max_width_value: 800px) {
+  max-width: $max_width_value;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @mixin a11y() {
   // Often we'll need extra text in the HTML for accessibility
   // reasons. This mixin will take the affected element out of
