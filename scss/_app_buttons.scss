@@ -1,0 +1,23 @@
+
+.app_button {
+  display: block;
+  width: 146px;
+  height: 44px;
+  text-indent: -999px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+
+  @media (min-width: $breakpoint_desktop) {
+    width: 156px;
+    height: 47px;
+  }
+
+  &[href^="https://www.apple"] {
+    background-image: url(#{$path_to_images}apple_store.svg);
+  }
+
+  &[href^="https://play"] {
+    background-image: url(#{$path_to_images}google_play.svg);
+  }
+}

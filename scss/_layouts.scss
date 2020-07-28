@@ -3,6 +3,7 @@
 .container {
   padding-inline: $gutter_default;
   text-align: center;
+
   @include max-width-container($width_faux_column);
 
   @media (min-width: $breakpoint_desktop) {
