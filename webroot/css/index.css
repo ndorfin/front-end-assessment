@@ -33,10 +33,11 @@
 
 body {
   font-size: 16px;
-  line-height: 1.32;
+  line-height: 1.44;
   font-family: Lato, Arial, Helvetica, sans-serif;
   margin: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  color: #4f4f4f; }
 
 img,
 svg,
@@ -93,6 +94,19 @@ nav ul {
   .logo_sports:hover, .app_button:hover {
     transform: scale(1.1); }
 
+main a {
+  color: #00adee;
+  transition: text-decoration-color 0.2s; }
+  main a:hover {
+    text-decoration-color: #bfebfb; }
+
+.logo_sports, .app_button {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in; }
+  .logo_sports:hover, .app_button:hover {
+    transform: scale(1.1); }
+
 .container {
   padding-inline: 20px;
   text-align: center;
@@ -103,18 +117,6 @@ nav ul {
     .container {
       text-align: start;
       padding-inline: 0; } }
-
-body > header {
-  background-color: #f4f6f9;
-  padding-block-start: 30px; }
-  body > header h1 {
-    margin: 0; }
-  @media (min-width: 1032px) {
-    body > header {
-      position: absolute;
-      top: 61px;
-      left: calc(50% - 500px);
-      z-index: 3; } }
 
 .logo_sports, .app_button {
   transition-property: transform;
@@ -138,6 +140,62 @@ body > header {
       margin-inline: 0;
       width: 92px;
       height: 32px; } }
+
+.app_button {
+  display: block;
+  width: 146px;
+  height: 44px;
+  text-indent: -999px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden; }
+  @media (min-width: 1032px) {
+    .app_button {
+      width: 156px;
+      height: 47px; } }
+  .app_button[href^="https://www.apple"] {
+    background-image: url(../img/apple_store.svg); }
+  .app_button[href^="https://play"] {
+    background-image: url(../img/google_play.svg); }
+
+.logo_sports, .app_button {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in; }
+  .logo_sports:hover, .app_button:hover {
+    transform: scale(1.1); }
+
+[data-help-tag]::before {
+  content: attr(data-help-tag);
+  display: block;
+  margin-block-end: 27px;
+  text-transform: uppercase;
+  color: #00adee;
+  font-size: 1rem;
+  font-weight: 700; }
+
+.logo_sports, .app_button {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in; }
+  .logo_sports:hover, .app_button:hover {
+    transform: scale(1.1); }
+
+.list_features {
+  list-style: none;
+  padding: 0; }
+
+body > header {
+  background-color: #f4f6f9;
+  padding-block-start: 30px; }
+  body > header h1 {
+    margin: 0; }
+  @media (min-width: 1032px) {
+    body > header {
+      position: absolute;
+      top: 61px;
+      left: calc(50% - 500px);
+      z-index: 3; } }
 
 .logo_sports, .app_button {
   transition-property: transform;
@@ -212,22 +270,27 @@ body > header {
       .masthead_buttons li + li {
         margin-left: 36px; } }
 
-.app_button {
-  display: block;
-  width: 146px;
-  height: 44px;
-  text-indent: -999px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  overflow: hidden; }
+#section-user-friendly {
+  padding-block-start: 55px;
+  padding-block-end: 72px; }
+  #section-user-friendly::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    background-image: url("../img/icon_bell_disc.svg"), url("../img/icon_app_enter_disc.svg"), url("../img/mobile_screenshot_5.png"), url("../img/iphone_mockup.svg");
+    background-repeat: no-repeat;
+    background-position: 22px 29px, 283px 386px, 87px 86px, 0 0;
+    background-size: 91px 91px, 91px 91px, 223px 396px, 353px 612px;
+    width: 386px;
+    height: 610px; }
+  #section-user-friendly .heading {
+    margin-block-end: 27px; }
   @media (min-width: 1032px) {
-    .app_button {
-      width: 156px;
-      height: 47px; } }
-  .app_button[href^="https://www.apple"] {
-    background-image: url(../img/apple_store.svg); }
-  .app_button[href^="https://play"] {
-    background-image: url(../img/google_play.svg); }
+    #section-user-friendly {
+      padding-block-start: 214px;
+      padding-block-end: 171px; }
+      #section-user-friendly > div > * {
+        max-width: 480px; } }
 
 .logo_sports, .app_button {
   transition-property: transform;
@@ -236,11 +299,9 @@ body > header {
   .logo_sports:hover, .app_button:hover {
     transform: scale(1.1); }
 
-[data-help-tag]::before {
-  content: attr(data-help-tag);
-  display: block;
-  margin-block-end: 27px;
-  text-transform: uppercase;
-  color: #00adee;
-  font-size: 1rem;
-  font-weight: 700; }
+@media (min-width: 1032px) {
+  #section-features {
+    color: #fff;
+    background-color: #00adee; }
+    #section-features .heading {
+      color: inherit; } }

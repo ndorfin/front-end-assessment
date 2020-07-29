@@ -1,0 +1,12 @@
+@import "variables";
+
+#section-features {
+  @media (min-width: $breakpoint_desktop) {
+    color: #fff;
+    background-color: $colour_brand_blue;
+
+    .heading {
+      color: inherit;
+    }
+  }
+}

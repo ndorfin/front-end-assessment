@@ -1,0 +1,10 @@
+@import "variables";
+
+main a {
+  color: $colour_brand_blue;
+  transition: text-decoration-color 0.2s;
+
+  &:hover {
+    text-decoration-color: mix($colour_brand_blue, #fff, 25%);
+  }
+}

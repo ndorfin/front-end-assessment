@@ -12,11 +12,18 @@
 
 // General styling
 @import "headings";
+@import "links";
 
 // Components
 @import "layouts";
-@import "header";
 @import "logo_sports";
-@import "masthead";
 @import "app_buttons";
 @import "help_tag";
+@import "list_features";
+
+// Sections
+@import "header";
+@import "masthead";
+@import "section_user_friendly";
+@import "section_features";
+

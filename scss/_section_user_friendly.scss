@@ -1,0 +1,43 @@
+#section-user-friendly {
+  padding-block-start: 55px;
+  padding-block-end: 72px;
+
+  &::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    background-image:
+      url('#{$path_to_images}icon_bell_disc.svg'),
+      url('#{$path_to_images}icon_app_enter_disc.svg'),
+      url('#{$path_to_images}mobile_screenshot_5.png'),
+      url('#{$path_to_images}iphone_mockup.svg');
+    background-repeat: no-repeat;
+    background-position:
+      22px 29px,
+      283px 386px,
+      87px 86px,
+      0 0;
+    background-size:
+      91px 91px,
+      91px 91px,
+      223px 396px,
+      353px 612px;
+    width: 386px;
+    height: 610px;
+  }
+
+  .heading {
+    margin-block-end: 27px;
+  }
+
+  @media (min-width: $breakpoint_desktop) {
+    padding-block-start: 214px;
+    padding-block-end: 171px;
+
+    > div {
+      > * {
+        max-width: 480px;
+      }
+    }
+  }
+}

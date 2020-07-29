@@ -2,10 +2,11 @@
 
 body {
   font-size: $font_default_size;
-  line-height: 1.32;
+  line-height: 1.44;
   font-family: $font_stack;
   margin: 0;
   overflow-x: hidden;
+  color: $colour_text;
 }
 
 img,
