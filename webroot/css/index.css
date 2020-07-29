@@ -33,7 +33,7 @@
 
 body {
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.32;
   font-family: Lato, Arial, Helvetica, sans-serif;
   margin: 0;
   overflow-x: hidden; }
@@ -73,8 +73,18 @@ nav ul {
   .logo_sports:hover, .app_button:hover {
     transform: scale(1.1); }
 
+.heading {
+  color: #333;
+  font-weight: 700; }
+
 .heading_masthead {
-  color: #333; }
+  font-size: 30px; }
+  @media (min-width: 1032px) {
+    .heading_masthead {
+      font-size: 36px; } }
+
+.heading_section {
+  font-size: 28px; }
 
 .logo_sports, .app_button {
   transition-property: transform;
@@ -218,3 +228,19 @@ body > header {
     background-image: url(../img/apple_store.svg); }
   .app_button[href^="https://play"] {
     background-image: url(../img/google_play.svg); }
+
+.logo_sports, .app_button {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in; }
+  .logo_sports:hover, .app_button:hover {
+    transform: scale(1.1); }
+
+[data-help-tag]::before {
+  content: attr(data-help-tag);
+  display: block;
+  margin-block-end: 27px;
+  text-transform: uppercase;
+  color: #00adee;
+  font-size: 1rem;
+  font-weight: 700; }

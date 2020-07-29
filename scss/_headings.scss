@@ -1,5 +1,19 @@
 @import "variables";
 
-.heading_masthead {
+// Base class for setting heading defaults
+.heading {
   color: $colour_headings;
+  font-weight: 700;
+}
+
+.heading_masthead {
+  font-size: 30px;
+
+  @media (min-width: $breakpoint_desktop) {
+    font-size: 36px;
+  }
+}
+
+.heading_section {
+  font-size: 28px;
 }

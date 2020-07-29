@@ -1,0 +1,11 @@
+@import "variables";
+
+[data-help-tag]::before {
+  content: attr(data-help-tag);
+  display: block;
+  margin-block-end: 27px;
+  text-transform: uppercase;
+  color: $colour_brand_blue;
+  font-size: 1rem;
+  font-weight: 700;
+}
