@@ -4,5 +4,16 @@ body > header {
 
   h1 {
     margin: 0;
+
+    a {
+      // See _logo_sport.scss
+    }
+  }
+
+  @media (min-width: $breakpoint_desktop) {
+    position: absolute;
+    top: 61px;
+    left: calc(50% - #{($width_faux_column / 2)});
+    z-index: 1;
   }
 }

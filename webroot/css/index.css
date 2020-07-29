@@ -14,7 +14,8 @@ body {
   font-size: 16px;
   line-height: 1.25;
   font-family: Lato, Arial, Helvetica, sans-serif;
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
 
 img,
 svg,
@@ -56,6 +57,12 @@ body > header {
   padding-block-start: 30px; }
   body > header h1 {
     margin: 0; }
+  @media (min-width: 1032px) {
+    body > header {
+      position: absolute;
+      top: 61px;
+      left: calc(50% - 500px);
+      z-index: 1; } }
 
 .logo_sports {
   display: block;
@@ -74,7 +81,21 @@ body > header {
       height: 32px; } }
 
 .masthead {
-  background-color: #f4f6f9; }
+  background-color: #f4f6f9;
+  position: relative; }
+  @media (min-width: 1032px) {
+    .masthead::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -140px;
+      left: 50%;
+      width: 1187px;
+      height: 1152px;
+      transform: rotate(30deg);
+      background-image: url("../img/mobile_screenshot_1.png"), url("../img/iphone_mockup.svg"), url("../img/mobile_screenshot_2.png"), url("../img/iphone_mockup.svg"), url("../img/mobile_screenshot_3.png"), url("../img/iphone_mockup.svg"), url("../img/mobile_screenshot_4.png"), url("../img/iphone_mockup.svg"), url("../img/mobile_screenshot_5.png"), url("../img/iphone_mockup.svg");
+      background-position: 372px 290px, 310px 227px, 604px 119px, 542px 56px, 372px 742px, 310px 679px, 611px 603px, 549px 540px, 851px 464px, 789px 401px;
+      background-repeat: no-repeat; } }
   .masthead > div {
     display: flex;
     flex-direction: column;
@@ -82,25 +103,29 @@ body > header {
     padding-block-end: 60px; }
     @media (min-width: 1032px) {
       .masthead > div {
-        align-items: flex-start; } }
+        align-items: flex-start;
+        padding-block-end: 164px; } }
+    .masthead > div > * {
+      max-width: 546px; }
   .masthead .heading {
     color: #333;
     font-size: 30px;
     line-height: 1.32;
-    margin-top: 50px;
-    margin-bottom: 33px;
+    margin-block-start: 50px;
+    margin-block-end: 33px;
     font-weight: 700; }
     @media (min-width: 1032px) {
       .masthead .heading {
         font-size: 36px;
-        margin-bottom: 30px; } }
+        margin-block-start: 226px;
+        margin-block-end: 30px; } }
 
 .masthead_description {
   color: #4f4f4f;
   font-size: 16px;
   line-height: 1.44;
-  margin-top: 0;
-  margin-bottom: 50px; }
+  margin-block-start: 0;
+  margin-block-end: 50px; }
   @media (min-width: 1032px) {
     .masthead_description {
       font-size: 18px; } }
