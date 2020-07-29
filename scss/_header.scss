@@ -14,6 +14,6 @@ body > header {
     position: absolute;
     top: 61px;
     left: calc(50% - #{($width_faux_column / 2)});
-    z-index: 1;
+    z-index: 3;
   }
 }

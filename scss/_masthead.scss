@@ -58,8 +58,9 @@ $masthead_images:
       content: '';
       display: block;
       position: absolute;
+      z-index: 1;
       bottom: -140px;
-      left: 50%;
+      left: calc(50% - 160px);
       width: 1187px;
       height: 1152px;
       transform: rotate(30deg);
@@ -74,6 +75,8 @@ $masthead_images:
     flex-direction: column;
     align-items: center;
     padding-block-end: 60px;
+    position: relative;
+    z-index: 2;
 
     @media (min-width: $breakpoint_desktop) {
       align-items: flex-start;

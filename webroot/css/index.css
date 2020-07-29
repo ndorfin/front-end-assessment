@@ -1,3 +1,17 @@
+.logo_sports, .app_button {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in; }
+  .logo_sports:hover, .app_button:hover {
+    transform: scale(1.1); }
+
+.logo_sports, .app_button {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in; }
+  .logo_sports:hover, .app_button:hover {
+    transform: scale(1.1); }
+
 @font-face {
   font-family: "Lato";
   src: local("Lato Bold"), local("Lato-Bold"), url("../fonts/lato-bold.woff2") format("woff2"), url("../fonts/lato-bold.woff") format("woff");
@@ -9,6 +23,13 @@
   src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/lato-regular.woff2") format("woff2"), url("../fonts/lato-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
+
+.logo_sports, .app_button {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in; }
+  .logo_sports:hover, .app_button:hover {
+    transform: scale(1.1); }
 
 body {
   font-size: 16px;
@@ -27,6 +48,13 @@ nav ul {
   margin: 0;
   padding: 0; }
 
+.logo_sports, .app_button {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in; }
+  .logo_sports:hover, .app_button:hover {
+    transform: scale(1.1); }
+
 .a11y {
   position: absolute;
   overflow: hidden;
@@ -38,8 +66,22 @@ nav ul {
   padding: 0;
   border: 0; }
 
+.logo_sports, .app_button {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in; }
+  .logo_sports:hover, .app_button:hover {
+    transform: scale(1.1); }
+
 .heading_masthead {
   color: #333; }
+
+.logo_sports, .app_button {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in; }
+  .logo_sports:hover, .app_button:hover {
+    transform: scale(1.1); }
 
 .container {
   padding-inline: 20px;
@@ -62,7 +104,14 @@ body > header {
       position: absolute;
       top: 61px;
       left: calc(50% - 500px);
-      z-index: 1; } }
+      z-index: 3; } }
+
+.logo_sports, .app_button {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in; }
+  .logo_sports:hover, .app_button:hover {
+    transform: scale(1.1); }
 
 .logo_sports {
   display: block;
@@ -80,6 +129,13 @@ body > header {
       width: 92px;
       height: 32px; } }
 
+.logo_sports, .app_button {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in; }
+  .logo_sports:hover, .app_button:hover {
+    transform: scale(1.1); }
+
 .masthead {
   background-color: #f4f6f9;
   position: relative; }
@@ -88,8 +144,9 @@ body > header {
       content: '';
       display: block;
       position: absolute;
+      z-index: 1;
       bottom: -140px;
-      left: 50%;
+      left: calc(50% - 160px);
       width: 1187px;
       height: 1152px;
       transform: rotate(30deg);
@@ -100,7 +157,9 @@ body > header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-block-end: 60px; }
+    padding-block-end: 60px;
+    position: relative;
+    z-index: 2; }
     @media (min-width: 1032px) {
       .masthead > div {
         align-items: flex-start;

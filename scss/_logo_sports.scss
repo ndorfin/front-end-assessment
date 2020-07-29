@@ -1,6 +1,8 @@
 @import "variables";
 
 .logo_sports {
+  @extend %button_hover;
+
   display: block;
   margin-inline: auto;
   text-indent: -999px;

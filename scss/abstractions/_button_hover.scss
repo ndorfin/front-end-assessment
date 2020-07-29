@@ -1,0 +1,9 @@
+%button_hover {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

@@ -1,5 +1,7 @@
 
 .app_button {
+  @extend %button_hover;
+
   display: block;
   width: 146px;
   height: 44px;
