@@ -189,7 +189,7 @@ main a {
   .list_features li {
     padding-block-start: 50px;
     margin-block-start: 50px;
-    max-width: 400px;
+    max-width: 40ch;
     margin-left: auto;
     margin-right: auto; }
   @media (min-width: 1032px) {
