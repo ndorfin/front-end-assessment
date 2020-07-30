@@ -76,7 +76,8 @@ nav ul {
 
 .heading {
   color: #333;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-block: 0; }
 
 .heading_masthead {
   font-size: 30px; }
@@ -183,7 +184,66 @@ main a {
 
 .list_features {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
+  .list_features li {
+    padding-block-start: 50px;
+    margin-block-start: 50px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto; }
+  @media (min-width: 1032px) {
+    .list_features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 90px;
+      column-gap: 90px;
+      grid-row-gap: 45px;
+      row-gap: 45px;
+      margin-block-start: 50px; }
+      .list_features li {
+        margin-block-start: 0;
+        max-width: 100%; } }
+
+.icon_feature {
+  background-size: 40px;
+  background-position: 50% 0;
+  background-repeat: no-repeat; }
+  @media (min-width: 1032px) {
+    .icon_feature {
+      background-position: 0 0; } }
+
+.icon_bell_ringing {
+  background-image: url("../img/icon_bell_ringing_blue.svg"); }
+
+.icon_flag {
+  background-image: url("../img/icon_flag_blue.svg"); }
+
+.icon_graph {
+  background-image: url("../img/icon_graph_blue.svg"); }
+
+.icon_hd {
+  background-image: url("../img/icon_hd_blue.svg"); }
+
+.icon_tent {
+  background-image: url("../img/icon_tent_blue.svg"); }
+
+.icon_video {
+  background-image: url("../img/icon_video_blue.svg"); }
+
+@media (min-width: 1032px) {
+  .icon_bell_ringing {
+    background-image: url("../img/icon_bell_ringing_white.svg"); }
+  .icon_flag {
+    background-image: url("../img/icon_flag_white.svg"); }
+  .icon_graph {
+    background-image: url("../img/icon_graph_white.svg"); }
+  .icon_hd {
+    background-image: url("../img/icon_hd_white.svg"); }
+  .icon_tent {
+    background-image: url("../img/icon_tent_white.svg"); }
+  .icon_video {
+    background-image: url("../img/icon_video_white.svg"); } }
 
 body > header {
   background-color: #f4f6f9;
@@ -329,9 +389,18 @@ body > header {
   .logo_sports:hover, .app_button:hover {
     transform: scale(1.1); }
 
-@media (min-width: 1032px) {
-  #section-features {
-    color: #fff;
-    background-color: #00adee; }
-    #section-features .heading {
-      color: inherit; } }
+#section-features {
+  padding-block-start: 45px;
+  padding-block-end: 58px; }
+  @media (min-width: 1032px) {
+    #section-features {
+      padding-block-start: 76px;
+      padding-block-end: 70px;
+      color: #fff;
+      background-color: #00adee;
+      background-image: url("../img/bg_blue_rectangles.svg");
+      background-repeat: no-repeat;
+      background-size: contain; }
+      #section-features .heading {
+        color: inherit;
+        text-align: center; } }

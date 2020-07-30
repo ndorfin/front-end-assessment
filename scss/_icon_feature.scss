@@ -1,0 +1,33 @@
+$icon_feature_list:
+  'bell_ringing',
+  'flag',
+  'graph',
+  'hd',
+  'tent',
+  'video';
+
+@mixin generate-icons($colour: 'blue') {
+  @each $icon in $icon_feature_list {
+    .icon_#{$icon} {
+      background-image: url('#{$path_to_images}icon_#{$icon}_#{$colour}.svg');
+    }
+  }
+}
+
+.icon_feature {
+  background-size: 40px;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: $breakpoint_desktop) {
+    background-position: 0 0;
+  }
+}
+
+@include generate-icons();
+
+@media (min-width: $breakpoint_desktop) {
+  @include generate-icons('white');
+}
+
+

@@ -3,4 +3,26 @@
 .list_features {
   list-style: none;
   padding: 0;
+  margin: 0;
+
+  li {
+    padding-block-start: 50px;
+    margin-block-start: 50px;
+    @include max-width-container(400px);
+  }
+
+  @media (min-width: $breakpoint_desktop) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 90px;
+    column-gap: 90px;
+    grid-row-gap: 45px;
+    row-gap: 45px;
+    margin-block-start: 50px;
+
+    li {
+      margin-block-start: 0;
+      max-width: 100%;
+    }
+  }
 }

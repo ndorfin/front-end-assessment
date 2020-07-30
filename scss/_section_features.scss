@@ -1,12 +1,21 @@
 @import "variables";
 
 #section-features {
+  padding-block-start: 45px;
+  padding-block-end: 58px;
+
   @media (min-width: $breakpoint_desktop) {
+    padding-block-start: 76px;
+    padding-block-end: 70px;
     color: #fff;
     background-color: $colour_brand_blue;
+    background-image: url('#{$path_to_images}bg_blue_rectangles.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 
     .heading {
       color: inherit;
+      text-align: center;
     }
   }
 }
