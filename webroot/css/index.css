@@ -270,19 +270,47 @@ body > header {
       .masthead_buttons li + li {
         margin-left: 36px; } }
 
+@keyframes orbit {
+  0% {
+    transform: translateX(-50%) rotate(0); }
+  100% {
+    transform: translateX(-50%) rotate(1turn); } }
+
 #section-user-friendly {
   padding-block-start: 55px;
-  padding-block-end: 72px; }
-  #section-user-friendly::after {
+  padding-block-end: 610px;
+  position: relative; }
+  #section-user-friendly::before, #section-user-friendly::after {
     content: '';
     display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+  #section-user-friendly::before {
+    z-index: -1;
+    top: calc(100% - 1305px);
+    width: 2000px;
+    height: 2000px;
+    background-image: url("../img/radar_blip.svg"), url("../img/radar.svg");
+    background-position: calc(50% - 300px) calc(50% - 40px), 50% 50%;
+    animation: orbit 100s infinite linear; }
+    @media (min-width: 1032px) {
+      #section-user-friendly::before {
+        left: calc(50% + 300px);
+        bottom: auto;
+        top: calc(50% - 1000px); } }
+  #section-user-friendly::after {
+    top: calc(100% - 610px);
     margin: 0 auto;
     background-image: url("../img/icon_bell_disc.svg"), url("../img/icon_app_enter_disc.svg"), url("../img/mobile_screenshot_5.png"), url("../img/iphone_mockup.svg");
-    background-repeat: no-repeat;
     background-position: 22px 29px, 283px 386px, 87px 86px, 0 0;
     background-size: 91px 91px, 91px 91px, 223px 396px, 353px 612px;
     width: 386px;
     height: 610px; }
+    @media (min-width: 1032px) {
+      #section-user-friendly::after {
+        left: calc(50% + 300px); } }
   #section-user-friendly .heading {
     margin-block-end: 27px; }
   @media (min-width: 1032px) {
@@ -290,7 +318,8 @@ body > header {
       padding-block-start: 214px;
       padding-block-end: 171px; }
       #section-user-friendly > div > * {
-        max-width: 480px; } }
+        max-width: 480px;
+        margin-inline-end: auto; } }
 
 .logo_sports, .app_button {
   transition-property: transform;

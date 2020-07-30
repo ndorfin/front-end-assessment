@@ -1,17 +1,59 @@
+@keyframes orbit {
+  0% {
+    transform: translateX(-50%) rotate(0);
+  }
+  100% {
+    transform: translateX(-50%) rotate(1turn);
+  }
+}
+
+$user-friendly-app-image-height: 610px;
+$user-friendly-radar-image-dimension: 2000px;
+
 #section-user-friendly {
   padding-block-start: 55px;
-  padding-block-end: 72px;
+  padding-block-end: $user-friendly-app-image-height;
+  position: relative;
 
+  &::before,
   &::after {
     content: '';
     display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::before {
+    z-index: -1;
+    top: calc(100% - #{($user-friendly-radar-image-dimension / 2) + ($user-friendly-app-image-height / 2)});
+    width: $user-friendly-radar-image-dimension;
+    height: $user-friendly-radar-image-dimension;
+    background-image:
+      url('#{$path_to_images}radar_blip.svg'),
+      url('#{$path_to_images}radar.svg');
+    background-position:
+      calc(50% - 300px) calc(50% - 40px),
+      50% 50%;
+    animation: orbit 100s infinite linear;
+
+    @media (min-width: $breakpoint_desktop) {
+      left: calc(50% + 300px);
+      bottom: auto;
+      top: calc(50% - #{($user-friendly-radar-image-dimension / 2)});
+    }
+  }
+
+  &::after {
+    // Align the images with the bottom as the basis
+    top: calc(100% - #{$user-friendly-app-image-height});
     margin: 0 auto;
     background-image:
       url('#{$path_to_images}icon_bell_disc.svg'),
       url('#{$path_to_images}icon_app_enter_disc.svg'),
       url('#{$path_to_images}mobile_screenshot_5.png'),
       url('#{$path_to_images}iphone_mockup.svg');
-    background-repeat: no-repeat;
     background-position:
       22px 29px,
       283px 386px,
@@ -23,11 +65,19 @@
       223px 396px,
       353px 612px;
     width: 386px;
-    height: 610px;
+    height: $user-friendly-app-image-height;
+
+    @media (min-width: $breakpoint_desktop) {
+      left: calc(50% + 300px);
+    }
   }
 
   .heading {
     margin-block-end: 27px;
+  }
+
+  > div {
+
   }
 
   @media (min-width: $breakpoint_desktop) {
@@ -37,6 +87,7 @@
     > div {
       > * {
         max-width: 480px;
+        margin-inline-end: auto;
       }
     }
   }
