@@ -31,8 +31,8 @@ $user-friendly-radar-image-dimension: 2000px;
     width: $user-friendly-radar-image-dimension;
     height: $user-friendly-radar-image-dimension;
     background-image:
-      url('#{$path_to_images}radar_blip.svg'),
-      url('#{$path_to_images}radar.svg');
+      image('radar_blip.svg'),
+      image('radar.svg');
     background-position:
       calc(50% - 300px) calc(50% - 40px),
       50% 50%;
@@ -53,10 +53,10 @@ $user-friendly-radar-image-dimension: 2000px;
     top: calc(100% - #{$user-friendly-app-image-height});
     margin: 0 auto;
     background-image:
-      url('#{$path_to_images}icon_bell_disc.svg'),
-      url('#{$path_to_images}icon_app_enter_disc.svg'),
-      url('#{$path_to_images}mobile_screenshot_5.png'),
-      url('#{$path_to_images}iphone_mockup.svg');
+      image('icon_bell_disc.svg'),
+      image('icon_app_enter_disc.svg'),
+      image('mobile_screenshot_5.png'),
+      image('iphone_mockup.svg');
     background-position:
       22px 29px,
       283px 386px,

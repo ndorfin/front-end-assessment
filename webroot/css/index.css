@@ -130,7 +130,7 @@ main a {
   display: block;
   margin-inline: auto;
   text-indent: -999px;
-  background-image: url("../img/logo_sports_colour.svg");
+  background-image: url(../img/logo_sports_colour.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 186px;
@@ -214,36 +214,36 @@ main a {
       background-position: 0 0; } }
 
 .icon_bell_ringing {
-  background-image: url("../img/icon_bell_ringing_blue.svg"); }
+  background-image: url(../img/icon_bell_ringing_blue.svg); }
 
 .icon_flag {
-  background-image: url("../img/icon_flag_blue.svg"); }
+  background-image: url(../img/icon_flag_blue.svg); }
 
 .icon_graph {
-  background-image: url("../img/icon_graph_blue.svg"); }
+  background-image: url(../img/icon_graph_blue.svg); }
 
 .icon_hd {
-  background-image: url("../img/icon_hd_blue.svg"); }
+  background-image: url(../img/icon_hd_blue.svg); }
 
 .icon_tent {
-  background-image: url("../img/icon_tent_blue.svg"); }
+  background-image: url(../img/icon_tent_blue.svg); }
 
 .icon_video {
-  background-image: url("../img/icon_video_blue.svg"); }
+  background-image: url(../img/icon_video_blue.svg); }
 
 @media (min-width: 1032px) {
   .icon_bell_ringing {
-    background-image: url("../img/icon_bell_ringing_white.svg"); }
+    background-image: url(../img/icon_bell_ringing_white.svg); }
   .icon_flag {
-    background-image: url("../img/icon_flag_white.svg"); }
+    background-image: url(../img/icon_flag_white.svg); }
   .icon_graph {
-    background-image: url("../img/icon_graph_white.svg"); }
+    background-image: url(../img/icon_graph_white.svg); }
   .icon_hd {
-    background-image: url("../img/icon_hd_white.svg"); }
+    background-image: url(../img/icon_hd_white.svg); }
   .icon_tent {
-    background-image: url("../img/icon_tent_white.svg"); }
+    background-image: url(../img/icon_tent_white.svg); }
   .icon_video {
-    background-image: url("../img/icon_video_white.svg"); } }
+    background-image: url(../img/icon_video_white.svg); } }
 
 body > header {
   background-color: #f4f6f9;
@@ -278,7 +278,7 @@ body > header {
       width: 1187px;
       height: 1152px;
       transform: rotate(30deg);
-      background-image: url("../img/mobile_screenshot_1.png"), url("../img/iphone_mockup.svg"), url("../img/mobile_screenshot_2.png"), url("../img/iphone_mockup.svg"), url("../img/mobile_screenshot_3.png"), url("../img/iphone_mockup.svg"), url("../img/mobile_screenshot_4.png"), url("../img/iphone_mockup.svg"), url("../img/mobile_screenshot_5.png"), url("../img/iphone_mockup.svg");
+      background-image: url(../img/mobile_screenshot_1.png), url(../img/iphone_mockup.svg), url(../img/mobile_screenshot_2.png), url(../img/iphone_mockup.svg), url(../img/mobile_screenshot_3.png), url(../img/iphone_mockup.svg), url(../img/mobile_screenshot_4.png), url(../img/iphone_mockup.svg), url(../img/mobile_screenshot_5.png), url(../img/iphone_mockup.svg);
       background-position: 372px 290px, 310px 227px, 604px 119px, 542px 56px, 372px 742px, 310px 679px, 611px 603px, 549px 540px, 851px 464px, 789px 401px;
       background-repeat: no-repeat; } }
   .masthead > div {
@@ -352,7 +352,7 @@ body > header {
     top: calc(100% - 1305px);
     width: 2000px;
     height: 2000px;
-    background-image: url("../img/radar_blip.svg"), url("../img/radar.svg");
+    background-image: url(../img/radar_blip.svg), url(../img/radar.svg);
     background-position: calc(50% - 300px) calc(50% - 40px), 50% 50%;
     background-size: 62px 62px, 2000px 2000px;
     animation: orbit 100s infinite linear; }
@@ -364,7 +364,7 @@ body > header {
   #section-user-friendly::after {
     top: calc(100% - 610px);
     margin: 0 auto;
-    background-image: url("../img/icon_bell_disc.svg"), url("../img/icon_app_enter_disc.svg"), url("../img/mobile_screenshot_5.png"), url("../img/iphone_mockup.svg");
+    background-image: url(../img/icon_bell_disc.svg), url(../img/icon_app_enter_disc.svg), url(../img/mobile_screenshot_5.png), url(../img/iphone_mockup.svg);
     background-position: 22px 29px, 283px 386px, 87px 86px, 0 0;
     background-size: 91px 91px, 91px 91px, 223px 396px, 353px 612px;
     width: 386px;
@@ -398,7 +398,7 @@ body > header {
       padding-block-end: 70px;
       color: #fff;
       background-color: #00adee;
-      background-image: url("../img/bg_blue_rectangles.svg");
+      background-image: url(../img/bg_blue_rectangles.svg);
       background-repeat: no-repeat;
       background-size: contain; }
       #section-features .heading {

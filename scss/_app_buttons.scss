@@ -16,10 +16,10 @@
   }
 
   &[href^="https://www.apple"] {
-    background-image: url(#{$path_to_images}apple_store.svg);
+    background-image: image('apple_store.svg');
   }
 
   &[href^="https://play"] {
-    background-image: url(#{$path_to_images}google_play.svg);
+    background-image: image('google_play.svg');
   }
 }

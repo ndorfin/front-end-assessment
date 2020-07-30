@@ -30,12 +30,12 @@ $masthead_images:
 @mixin multiple_backgrounds() {
   $url_list: ();
   $positions: ();
-  $url_mockup: url('#{$path_to_images}iphone_mockup.svg');
+  $url_mockup: image('iphone_mockup.svg');
   $x_offset: 62px;
   $y_offset: 63px;
 
   @each $image in $masthead_images {
-    $url_string: url('#{$path_to_images}#{map-get($image, 'url');}');
+    $url_string: image(map-get($image, 'url'));
     $position: map-get($image, 'x') map-get($image, 'y');
     $mockup_position: (map-get($image, 'x') - $x_offset) (map-get($image, 'y') - $y_offset);
     $url_list: append($url_list, $url_string, comma);

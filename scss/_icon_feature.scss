@@ -9,7 +9,7 @@ $icon_feature_list:
 @mixin generate-icons($colour: 'blue') {
   @each $icon in $icon_feature_list {
     .icon_#{$icon} {
-      background-image: url('#{$path_to_images}icon_#{$icon}_#{$colour}.svg');
+      background-image: image('icon_#{$icon}_#{$colour}.svg');
     }
   }
 }
