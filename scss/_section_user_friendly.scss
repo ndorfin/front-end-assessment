@@ -36,6 +36,9 @@ $user-friendly-radar-image-dimension: 2000px;
     background-position:
       calc(50% - 300px) calc(50% - 40px),
       50% 50%;
+    background-size:
+      62px 62px,
+      $user-friendly-radar-image-dimension $user-friendly-radar-image-dimension;
     animation: orbit 100s infinite linear;
 
     @media (min-width: $breakpoint_desktop) {

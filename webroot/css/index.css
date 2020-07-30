@@ -294,6 +294,7 @@ body > header {
     height: 2000px;
     background-image: url("../img/radar_blip.svg"), url("../img/radar.svg");
     background-position: calc(50% - 300px) calc(50% - 40px), 50% 50%;
+    background-size: 62px 62px, 2000px 2000px;
     animation: orbit 100s infinite linear; }
     @media (min-width: 1032px) {
       #section-user-friendly::before {
