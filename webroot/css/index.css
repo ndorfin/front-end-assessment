@@ -205,6 +205,43 @@ main a {
         margin-block-start: 0;
         max-width: 100%; } }
 
+.list_logos {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .list_logos li {
+    display: inline-block; }
+  .list_logos a {
+    display: block;
+    text-indent: -999px;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .list_logos [href^="https://sports.tv"] {
+    background-image: url(../img/logo_sports_tv.svg);
+    width: 149px;
+    height: 52px; }
+  .list_logos [href^="https://sports.com"] {
+    background-image: url(../img/logo_sports_channel.svg);
+    width: 102px;
+    height: 32px; }
+  .list_logos [href^="https://sports.nbc.com"] {
+    background-image: url(../img/logo_nbc_sports.svg);
+    width: 69px;
+    height: 58px; }
+  .list_logos [href^="https://designer-technology.com"] {
+    background-image: url(../img/logo_designer_technology.svg);
+    width: 110px;
+    height: 32px; }
+  .list_logos [href^="https://network-design.com"] {
+    background-image: url(../img/logo_designer_news.svg);
+    width: 48px;
+    height: 48px; }
+  .list_logos [href^="https://sports.sky.com"] {
+    background-image: url(../img/logo_sky_sports.svg);
+    width: 210px;
+    height: 34px; }
+
 .icon_feature {
   background-size: 40px;
   background-position: 50% 0;
@@ -404,3 +441,15 @@ body > header {
       #section-features .heading {
         color: inherit;
         text-align: center; } }
+
+.logo_sports, .app_button {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in; }
+  .logo_sports:hover, .app_button:hover {
+    transform: scale(1.1); }
+
+#section_featured_in {
+  background-color: #fafafa;
+  padding-block-start: 57px;
+  padding-block-end: 71px; }

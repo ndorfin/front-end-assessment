@@ -1,0 +1,47 @@
+.list_logos {
+  @include list_stripped;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    text-indent: -999px;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  [href^="https://sports.tv"] {
+    background-image: image('logo_sports_tv.svg');
+    width: 149px;
+    height: 52px;
+  }
+  [href^="https://sports.com"] {
+    background-image: image('logo_sports_channel.svg');
+    width: 102px;
+    height: 32px;
+  }
+  [href^="https://sports.nbc.com"] {
+    background-image: image('logo_nbc_sports.svg');
+    width: 69px;
+    height: 58px;
+  }
+  [href^="https://designer-technology.com"] {
+    background-image: image('logo_designer_technology.svg');
+    width: 110px;
+    height: 32px;
+  }
+  [href^="https://network-design.com"] {
+    background-image: image('logo_designer_news.svg');
+    width: 48px;
+    height: 48px;
+  }
+  [href^="https://sports.sky.com"] {
+    background-image: image('logo_sky_sports.svg');
+    width: 210px;
+    height: 34px;
+  }
+}
+
