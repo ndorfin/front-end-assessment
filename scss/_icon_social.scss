@@ -1,0 +1,23 @@
+.icon_social {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-indent: -999px;
+  overflow: hidden;
+  background-color: #fff;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &[href^="https://facebook.com"] {
+    background-image: image('icon_facebook.svg');
+  }
+  &[href^="https://twitter.com"] {
+    background-image: image('icon_twitter.svg');
+  }
+  &[href^="https://instagram.com"] {
+    background-image: image('icon_instagram.svg');
+  }
+}
+

@@ -1,0 +1,56 @@
+body > footer {
+  background-color: $colour_brand_blue;
+  color: #fff;
+  padding-block-start: 41px;
+  padding-block-end: 45px;
+
+  ul {
+    @include list_stripped;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint_desktop) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  p {
+    margin-block: 0;
+  }
+
+  .logo_sports {
+    margin-inline-start: 0;
+    width: 84px;
+    height: 32px;
+    background-image: image('logo_sports_white.svg');
+  }
+
+  .list_social {
+    margin-block-start: 11px;
+    margin-block-end: 34px;
+    order: 1;
+
+    @media (min-width: $breakpoint_desktop) {
+      order: 2;
+      margin-block: 0;
+    }
+  }
+
+  .list_nav {
+    order: 2;
+
+    @media (min-width: $breakpoint_desktop) {
+      order: 1;
+    }
+  }
+}
