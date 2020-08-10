@@ -208,15 +208,31 @@ main a {
 .list_logos {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 30rem;
+  margin: 0 auto; }
   .list_logos li {
-    display: inline-block; }
+    flex-grow: 1;
+    margin: 0 0 1rem; }
+  .list_logos .logo_full {
+    flex-basis: 100%; }
+  .list_logos .logo_half {
+    flex-basis: 50%; }
+  .list_logos .logo_third {
+    flex-basis: 33%; }
   .list_logos a {
     display: block;
+    margin: 0 auto;
     text-indent: -999px;
+    min-height: 58px;
     overflow: hidden;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: center; }
   .list_logos [href^="https://sports.tv"] {
     background-image: url(../img/logo_sports_tv.svg);
     width: 149px;
@@ -241,6 +257,12 @@ main a {
     background-image: url(../img/logo_sky_sports.svg);
     width: 210px;
     height: 34px; }
+  @media (min-width: 1032px) {
+    .list_logos {
+      max-width: 100%; }
+      .list_logos li {
+        flex-grow: 0;
+        flex-basis: auto !important; } }
 
 .icon_feature {
   background-size: 40px;
@@ -452,6 +474,17 @@ body > header {
     transform: scale(1.1); }
 
 #section_featured_in {
-  background-color: #fafafa;
+  background-color: #fff;
   padding-block-start: 57px;
   padding-block-end: 71px; }
+  @media (min-width: 1032px) {
+    #section_featured_in {
+      background-color: #fafafa;
+      padding-block-end: 68px; } }
+
+#section_featured_in .heading {
+  margin-block-end: 43px;
+  text-align: center; }
+  @media (min-width: 1032px) {
+    #section_featured_in .heading {
+      margin-block-end: 58px; } }

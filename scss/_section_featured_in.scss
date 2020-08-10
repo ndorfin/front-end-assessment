@@ -1,7 +1,21 @@
 @import "variables";
 
 #section_featured_in {
-  background-color: #fafafa;
+  background-color: #fff;
   padding-block-start: 57px;
   padding-block-end: 71px;
+
+  @media (min-width: $breakpoint_desktop) {
+    background-color: #fafafa;
+    padding-block-end: 68px;
+  }
+}
+
+#section_featured_in .heading {
+  margin-block-end: 43px;
+  text-align: center;
+
+  @media (min-width: $breakpoint_desktop) {
+    margin-block-end: 58px;
+  }
 }

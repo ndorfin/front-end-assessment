@@ -1,16 +1,39 @@
 .list_logos {
   @include list_stripped;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 30rem;
+  margin: 0 auto;
 
   li {
-    display: inline-block;
+    flex-grow: 1;
+    margin: 0 0 1rem;
   }
+
+  .logo_full {
+    flex-basis: 100%;
+  }
+
+  .logo_half {
+    flex-basis: 50%;
+  }
+
+  .logo_third {
+    flex-basis: 33%;
+  }
+
 
   a {
     display: block;
+    margin: 0 auto;
     text-indent: -999px;
+    min-height: 58px;
     overflow: hidden;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   [href^="https://sports.tv"] {
@@ -42,6 +65,15 @@
     background-image: image('logo_sky_sports.svg');
     width: 210px;
     height: 34px;
+  }
+
+  @media (min-width: $breakpoint_desktop) {
+    max-width: 100%;
+
+    li {
+      flex-grow: 0;
+      flex-basis: auto !important;
+    }
   }
 }
 
