@@ -30,9 +30,9 @@ $masthead_images:
 @mixin multiple_backgrounds() {
   $url_list: ();
   $positions: ();
-  $url_mockup: image('iphone_mockup.svg');
-  $x_offset: 62px;
-  $y_offset: 63px;
+  $url_mockup: image('iphone_mockup_no_shadow.svg');
+  $x_offset: 11px;
+  $y_offset: 47px;
 
   @each $image in $masthead_images {
     $url_string: image(map-get($image, 'url'));
@@ -47,6 +47,7 @@ $masthead_images:
   background-image: $url_list;
   background-position: $positions;
   background-repeat: no-repeat;
+  filter: drop-shadow(5px 5px 20px rgba(0,0,0,.5));
 }
 
 .masthead {

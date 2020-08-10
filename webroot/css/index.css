@@ -315,9 +315,10 @@ body > header {
       width: 1187px;
       height: 1152px;
       transform: rotate(30deg);
-      background-image: url(../img/mobile_screenshot_1.png), url(../img/iphone_mockup.svg), url(../img/mobile_screenshot_2.png), url(../img/iphone_mockup.svg), url(../img/mobile_screenshot_3.png), url(../img/iphone_mockup.svg), url(../img/mobile_screenshot_4.png), url(../img/iphone_mockup.svg), url(../img/mobile_screenshot_5.png), url(../img/iphone_mockup.svg);
-      background-position: 372px 290px, 310px 227px, 604px 119px, 542px 56px, 372px 742px, 310px 679px, 611px 603px, 549px 540px, 851px 464px, 789px 401px;
-      background-repeat: no-repeat; } }
+      background-image: url(../img/mobile_screenshot_1.png), url(../img/iphone_mockup_no_shadow.svg), url(../img/mobile_screenshot_2.png), url(../img/iphone_mockup_no_shadow.svg), url(../img/mobile_screenshot_3.png), url(../img/iphone_mockup_no_shadow.svg), url(../img/mobile_screenshot_4.png), url(../img/iphone_mockup_no_shadow.svg), url(../img/mobile_screenshot_5.png), url(../img/iphone_mockup_no_shadow.svg);
+      background-position: 372px 290px, 361px 243px, 604px 119px, 593px 72px, 372px 742px, 361px 695px, 611px 603px, 600px 556px, 851px 464px, 840px 417px;
+      background-repeat: no-repeat;
+      filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.5)); } }
   .masthead > div {
     display: flex;
     flex-direction: column;
@@ -401,11 +402,12 @@ body > header {
   #section-user-friendly::after {
     top: calc(100% - 610px);
     margin: 0 auto;
-    background-image: url(../img/icon_bell_disc.svg), url(../img/icon_app_enter_disc.svg), url(../img/mobile_screenshot_5.png), url(../img/iphone_mockup.svg);
-    background-position: 22px 29px, 283px 386px, 87px 86px, 0 0;
-    background-size: 91px 91px, 91px 91px, 223px 396px, 353px 612px;
+    background-image: url(../img/icon_bell_disc.svg), url(../img/icon_app_enter_disc.svg), url(../img/mobile_screenshot_5.png), url(../img/iphone_mockup_no_shadow.svg);
+    background-position: 17px 29px, 278px 386px, 82px 86px, 64px 25px;
+    background-size: 91px 91px, 91px 91px, 223px 396px, 257px 513px;
     width: 386px;
-    height: 610px; }
+    height: 610px;
+    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.5)); }
     @media (min-width: 1032px) {
       #section-user-friendly::after {
         left: calc(50% + 300px); } }

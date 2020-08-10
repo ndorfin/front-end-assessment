@@ -56,19 +56,20 @@ $user-friendly-radar-image-dimension: 2000px;
       image('icon_bell_disc.svg'),
       image('icon_app_enter_disc.svg'),
       image('mobile_screenshot_5.png'),
-      image('iphone_mockup.svg');
+      image('iphone_mockup_no_shadow.svg');
     background-position:
-      22px 29px,
-      283px 386px,
-      87px 86px,
-      0 0;
+      17px 29px,
+      278px 386px,
+      82px 86px,
+      64px 25px;
     background-size:
       91px 91px,
       91px 91px,
       223px 396px,
-      353px 612px;
+      257px 513px;
     width: 386px;
     height: $user-friendly-app-image-height;
+    filter: drop-shadow(5px 5px 20px rgba(0,0,0,.5));
 
     @media (min-width: $breakpoint_desktop) {
       left: calc(50% + 300px);
