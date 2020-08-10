@@ -1,15 +1,15 @@
-.logo_sports, .app_button {
+.logo_sports, .app_button, .icon_social {
   transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
-  .logo_sports:hover, .app_button:hover {
+  .logo_sports:hover, .app_button:hover, .icon_social:hover {
     transform: scale(1.1); }
 
-.logo_sports, .app_button {
+.logo_sports, .app_button, .icon_social {
   transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
-  .logo_sports:hover, .app_button:hover {
+  .logo_sports:hover, .app_button:hover, .icon_social:hover {
     transform: scale(1.1); }
 
 @font-face {
@@ -24,11 +24,11 @@
   font-weight: 400;
   font-style: normal; }
 
-.logo_sports, .app_button {
+.logo_sports, .app_button, .icon_social {
   transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
-  .logo_sports:hover, .app_button:hover {
+  .logo_sports:hover, .app_button:hover, .icon_social:hover {
     transform: scale(1.1); }
 
 body {
@@ -49,11 +49,11 @@ nav ul {
   margin: 0;
   padding: 0; }
 
-.logo_sports, .app_button {
+.logo_sports, .app_button, .icon_social {
   transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
-  .logo_sports:hover, .app_button:hover {
+  .logo_sports:hover, .app_button:hover, .icon_social:hover {
     transform: scale(1.1); }
 
 .a11y {
@@ -67,11 +67,11 @@ nav ul {
   padding: 0;
   border: 0; }
 
-.logo_sports, .app_button {
+.logo_sports, .app_button, .icon_social {
   transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
-  .logo_sports:hover, .app_button:hover {
+  .logo_sports:hover, .app_button:hover, .icon_social:hover {
     transform: scale(1.1); }
 
 .heading {
@@ -88,11 +88,11 @@ nav ul {
 .heading_section {
   font-size: 28px; }
 
-.logo_sports, .app_button {
+.logo_sports, .app_button, .icon_social {
   transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
-  .logo_sports:hover, .app_button:hover {
+  .logo_sports:hover, .app_button:hover, .icon_social:hover {
     transform: scale(1.1); }
 
 main a {
@@ -101,11 +101,11 @@ main a {
   main a:hover {
     text-decoration-color: #bfebfb; }
 
-.logo_sports, .app_button {
+.logo_sports, .app_button, .icon_social {
   transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
-  .logo_sports:hover, .app_button:hover {
+  .logo_sports:hover, .app_button:hover, .icon_social:hover {
     transform: scale(1.1); }
 
 .container {
@@ -119,11 +119,11 @@ main a {
       text-align: start;
       padding-inline: 0; } }
 
-.logo_sports, .app_button {
+.logo_sports, .app_button, .icon_social {
   transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
-  .logo_sports:hover, .app_button:hover {
+  .logo_sports:hover, .app_button:hover, .icon_social:hover {
     transform: scale(1.1); }
 
 .logo_sports {
@@ -159,11 +159,11 @@ main a {
   .app_button[href^="https://play"] {
     background-image: url(../img/google_play.svg); }
 
-.logo_sports, .app_button {
+.logo_sports, .app_button, .icon_social {
   transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
-  .logo_sports:hover, .app_button:hover {
+  .logo_sports:hover, .app_button:hover, .icon_social:hover {
     transform: scale(1.1); }
 
 [data-help-tag]::before {
@@ -175,11 +175,11 @@ main a {
   font-size: 1rem;
   font-weight: 700; }
 
-.logo_sports, .app_button {
+.logo_sports, .app_button, .icon_social {
   transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
-  .logo_sports:hover, .app_button:hover {
+  .logo_sports:hover, .app_button:hover, .icon_social:hover {
     transform: scale(1.1); }
 
 .list_features {
@@ -326,13 +326,14 @@ main a {
   text-indent: -999px;
   overflow: hidden;
   background-color: #fff;
-  background-size: 14px 14px;
   background-repeat: no-repeat;
-  background-position: 50% 50%; }
+  background-position: 50% 50%;
+  background-size: 15px 15px; }
   .icon_social[href^="https://facebook.com"] {
     background-image: url(../img/icon_facebook.svg); }
   .icon_social[href^="https://twitter.com"] {
-    background-image: url(../img/icon_twitter.svg); }
+    background-image: url(../img/icon_twitter.svg);
+    background-size: 17px 17px; }
   .icon_social[href^="https://instagram.com"] {
     background-image: url(../img/icon_instagram.svg); }
 
@@ -348,11 +349,11 @@ body > header {
       left: calc(50% - 500px);
       z-index: 3; } }
 
-.logo_sports, .app_button {
+.logo_sports, .app_button, .icon_social {
   transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
-  .logo_sports:hover, .app_button:hover {
+  .logo_sports:hover, .app_button:hover, .icon_social:hover {
     transform: scale(1.1); }
 
 .masthead {
@@ -475,11 +476,11 @@ body > header {
         max-width: 480px;
         margin-inline-end: auto; } }
 
-.logo_sports, .app_button {
+.logo_sports, .app_button, .icon_social {
   transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
-  .logo_sports:hover, .app_button:hover {
+  .logo_sports:hover, .app_button:hover, .icon_social:hover {
     transform: scale(1.1); }
 
 #section-features {
@@ -498,11 +499,11 @@ body > header {
         color: inherit;
         text-align: center; } }
 
-.logo_sports, .app_button {
+.logo_sports, .app_button, .icon_social {
   transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
-  .logo_sports:hover, .app_button:hover {
+  .logo_sports:hover, .app_button:hover, .icon_social:hover {
     transform: scale(1.1); }
 
 #section_featured_in {
